@@ -13,6 +13,6 @@
 - Handled most of the test types for images, in case of new image format please edit `webpack.common.js`
 - There are different webpack config for `prod` and `dev`
 
-### To-DO
+### To-Do
 
 - Will create a different brach and set up tailwind for future use.
