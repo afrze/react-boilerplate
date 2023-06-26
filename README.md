@@ -15,4 +15,4 @@
 
 ### To-DO
 
-- Will create a different brach and set up tailwind for future use. 
+- Will create a different brach and set up tailwind for future use.
