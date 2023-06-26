@@ -2,10 +2,10 @@
 
 ## Scripts
 
-`npm start` - To start the server.
-`npm build` - To build the app and get static files.
-`npm lint` - To run linter and get the report.
-`npm format` - To run prettier and auto format all the files.
+- `npm start` - To start the server.
+- `npm build` - To build the app and get static files.
+- `npm lint` - To run linter and get the report.
+- `npm format` - To run prettier and auto format all the files.
 
 ## Notes
 
