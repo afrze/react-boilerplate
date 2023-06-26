@@ -1,60 +1,18 @@
-# Features
+# React - With webpack and babel
 
-- Transpiler - Babel
-- Bundler - Webpack
+## Scripts
 
-## Step 1
+`npm start` - To start the server.
+`npm build` - To build the app and get static files.
+`npm lint` - To run linter and get the report.
+`npm format` - To run prettier and auto format all the files.
 
-```jsx
-npm init -y
-```
+## Notes
 
-## Step 2
+- Favicon uses a plugin `favicons-webpack-plugin` for dev. In case of changin the favicon please refer to `webpack.common.js`
+- Handled most of the test types for images, in case of new image format please edit `webpack.common.js`
+- There are different webpack config for `prod` and `dev`
 
-```jsx
-npm install react react-dom 
-```
+### To-DO
 
-## Step 3
-
-Install webpack as dev dependancy
-
-```jsx
-npm install webpack webpack-cli webpack-dev-server @babel/core @babel/preset-react @babel/preset-env  babel-loader html-webpack-plugin -D
-```
-
-### Step 4
-
-Create `webpack.config.js` file
-
-```jsx
-const path = require('path')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
-
-module.exports ={
-  entry: './src/index.js',
-  output: {
-    path: path.join(__dirname, '/dist'),
-    filename: 'bundle.js'
-  },
-  plugins: [
-    new HTMLWebpackPlugin({
-      template: './index.html'
-    })
-  ],
-  module: {
-    rules: [
-      {
-        test: /.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        }
-      }
-    ]
-  }
-}
-```
+- Will create a different brach and set up tailwind for future use. 
